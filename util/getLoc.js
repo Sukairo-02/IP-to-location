@@ -10,13 +10,20 @@ function killQuotes(str) {
 	return str.substring(1, str.length - 1)
 }
 
+function ip2int(ip) {
+	return (
+		ip.split('.').reduce(function (ipInt, octet) {
+			return (ipInt << 8) + parseInt(octet, 10)
+		}, 0) >>> 0
+	)
+}
+
 function getLoc(IP, list) {
-	let ip = IP.split('.').join('')
-	if (ip[0] === ':') {
-		ip = '127001'
+	if (IP[0] === ':') {
+		IP = '127001'
 	}
 
-	let ipNum = parseInt(ip)
+	let ipNum = ip2int(IP)
 
 	let [l, h] = [0, list.length - 1]
 	let i = h / 2
