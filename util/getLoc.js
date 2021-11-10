@@ -24,7 +24,6 @@ function getLoc(IP, list) {
 		parseInt(killQuotes(list[i][0])),
 		parseInt(killQuotes(list[i][1])),
 	]
-	console.log(`B:${beg}, E:${end}\nL:${l}, H:${h}\n`)
 
 	while (ipNum < beg || ipNum > end) {
 		if (ipNum < beg) {
