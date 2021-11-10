@@ -20,7 +20,7 @@ function ip2int(ip) {
 
 function getLoc(IP, list) {
 	if (IP[0] === ':') {
-		IP = '127001'
+		IP = '127.0.0.1'
 	}
 
 	let ipNum = ip2int(IP)
