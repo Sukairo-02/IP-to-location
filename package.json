@@ -1,0 +1,27 @@
+{
+	"name": "ip-to-location",
+	"version": "1.0.0",
+	"description": "Internship task",
+	"main": "app.js",
+	"scripts": {
+		"test": "nodemon app.js",
+		"start": "node app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Sukairo-02/IP-to-location.git"
+	},
+	"author": "Sukairo-02",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Sukairo-02/IP-to-location/issues"
+	},
+	"homepage": "https://github.com/Sukairo-02/IP-to-location#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"fs": "^0.0.1-security"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
+}
