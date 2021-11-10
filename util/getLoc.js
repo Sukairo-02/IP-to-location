@@ -18,7 +18,6 @@ function getLoc(IP, list) {
 
 	let ipNum = parseInt(ip)
 
-	console.log(ip)
 	let [l, h] = [0, list.length - 1]
 	let i = h / 2
 	let [beg, end] = [
